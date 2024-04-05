@@ -1503,14 +1503,18 @@ changelog/_unreleased/2024-03-12-distinctive-document-titles.md
 changelog/_unreleased/2024-02-06-fix-cloning-of-structs-with-enums.md
 changelog/_unreleased/2024-01-25-openapi-property-group-option.md
 changelog/_unreleased/2024-02-03-support-throwing-exception-when-create-customer.md
+changelog/_unreleased/2024-04-03-return-property-for-every-feature-flag.md
 changelog/_unreleased/2024-01-25-fix-issue-on-windowrouterpush.md
 changelog/_unreleased/2023-03-05-no-empty-nav.md
 changelog/_unreleased/2022-01-22-fix-statefulness-issues-of-twig-environment-in-seo-url-generator.md
 changelog/_unreleased/2023-11-06-add-flag-for-full-indexing-category.md
 changelog/_unreleased/2024-03-21-allow-export-invalid-import-only-profiles.md
+changelog/_unreleased/2024-04-02-add-gad_source-parameter-to-ignored-http-cache-parameters.md
 changelog/_unreleased/2024-01-23-fix-thumbnail-generation-edge-cases.md
 changelog/_unreleased/2024-01-25-remove-product-count-from-sales-channel-list.md
 changelog/_unreleased/2024-03-04-update-saleschannel-theme-assignment.md
+changelog/_unreleased/2024-03-28-avoid-to-set-active-billing-address-with-null.md
+changelog/_unreleased/2024-03-27-add-extension-points-to-sw-settings-usage-data.md
 changelog/_unreleased/2024-02-07-fix-asset-path-generation-in-plugin-html-files.md
 changelog/_unreleased/2024-03-01-member-fuction-gethash-on-null.md
 changelog/_unreleased/2024-02-19-add-back-button-to-sdk-settings-modules.md
@@ -1542,6 +1546,7 @@ changelog/_unreleased/2024-02-15-fix-variant-name-not-visible-in-dynamic-product
 changelog/_unreleased/2024-03-19-ensure-export-tempfile-is-open-before-copying-data.md
 changelog/_unreleased/2024-02-06-do-not-allow-deleting-connected-media-thumbnail-size.md
 changelog/_unreleased/2024-02-26-fix-insufficient-rule-condition-unit-value-rounding.md
+changelog/_unreleased/2024-03-29-handle-empty-query-exception.md
 changelog/_unreleased/2024-02-21-core-fixes.md
 changelog/_unreleased/2024-01-23-fix-losing-page-content-in-category-layout-tab-when-switching-to-a-landing-page.md
 changelog/_unreleased/2024-02-29-no-ips-selectable-in-allowlist-at-sales-channel.md
@@ -1554,6 +1559,7 @@ changelog/_unreleased/2024-02-21-fixes-missing-setindexer-for-newsletterrecipien
 changelog/_unreleased/2024-01-24-fix-translation-iso-code-unique-check.md
 changelog/_unreleased/2024-01-22-add-check-processed-promotions-to-avoid-duplicates.md
 changelog/_unreleased/2024-01-22-fix-umlauts-in-productsearchterminterpreter.md
+changelog/_unreleased/2024-03-21-improve-snippet-author-performance.md
 changelog/_unreleased/2024-03-11-add-sales-channel-context-getter-to-customerdoubleoptinregistrationevent.md
 changelog/_unreleased/2024-01-22-customize-the-modal-body-gap.md
 changelog/_unreleased/2024-02-20-remove-privileges-from-sdk-iframe-urls.md
@@ -1585,6 +1591,7 @@ changelog/_unreleased/2024-02-21-handle-reverse-proxy-errors-gracefully.md
 changelog/_unreleased/2024-02-27-update-app-metadata.md
 changelog/_unreleased/2024-02-14-make-migration-more-stable.md
 changelog/_unreleased/2024-03-13-media-fastly-proxy.md
+changelog/_unreleased/2024-04-02-add-sync-theme-compile-cli-option.md
 changelog/_unreleased/2024-03-12-support-webpack-config-ts.md
 changelog/_unreleased/2024-01-16-fix-api-security.md
 changelog/_unreleased/2024-01-19-fix-web-installer-with-custom-db-port.md
@@ -1654,6 +1661,7 @@ changelog/_unreleased/2024-02-09-improve-product-page-load-performance.md
 changelog/_unreleased/2023-11-22-append-slash-to-sitemap-home-url.md
 changelog/_unreleased/2024-02-27-add-new-html-cms-element.md
 changelog/_unreleased/2024-01-17-deprecate-shopidchangedexception.md
+changelog/_unreleased/2023-03-28-show-correct-saleschannel-on-customer-view.md
 changelog/_unreleased/2024-03-07-replace-mysql-with-dal-in-document-upload-flow.md
 changelog/_unreleased/2024-01-26-close-the-help-sidebar-on-route-changes.md
 changelog/_unreleased/2024-01-29-fix-html-entities-in-the-seo-fields.md
@@ -1665,6 +1673,7 @@ changelog/_unreleased/2024-01-22-fixed-reloading-of-customer-order-count.md
 changelog/_unreleased/2024-01-11-reduce-log-level-of-noconfigurationexception.md
 changelog/_unreleased/2023-11-28-add-adr-for-insider-preview.md
 changelog/_unreleased/2024-02-12-allow-hmac-jwt.md
+changelog/_unreleased/2024-04-03-cache-sales-channel-themes-per-sales-channel.md
 changelog/_unreleased/2024-01-30-fix-customer-language-reset-to-default-after-login.md
 changelog/_unreleased/2024-02-06-support-html5-tags.md
 changelog/_unreleased/2024-02-02-add-missing-xxl-breakpoint.md
@@ -1673,6 +1682,7 @@ changelog/_unreleased/2024-03-07-update-meteor-admin-sdk-version-to-5-0-1.md
 changelog/_unreleased/2024-02-07-check-user-cookie-preference-before-replace-video-element.md
 changelog/_unreleased/2024-01-23-promotion-individual-code-should-be-nullable.md
 changelog/_unreleased/2024-01-25-clean-up-temp-files-after-use-of-mediaservice.md
+changelog/_unreleased/2024-04-02-add-wrapper-component-for-sw-button.md
 changelog/_unreleased/2024-02-01-add-store-api-endpoint-to-fetch-media-entities.md
 changelog/_unreleased/2024-03-11-include-static-plugins-path-in-testbootstrapper.md
 changelog/_unreleased/2024-01-30-no-faulty-preview-of-product-comparison-sales-channels.md
@@ -1682,6 +1692,7 @@ changelog/_unreleased/2023-12-05-reload-config-when-the-config-namespace-changes
 changelog/_unreleased/2024-02-21-next-33716-add-translation-to-all-sdk-endpoints.md
 changelog/_unreleased/2024-01-29-fix-empty-content-after-saving-a-layout-has-missing-components.md
 changelog/_unreleased/2024-02-23-landing-page-seo-template-leads-to-infinite-redirection.md
+changelog/_unreleased/2024-03-28-added-vat-info-to-customer-account.md
 changelog/_unreleased/2024-01-23-fix-code-editor-emitting-without-blur.md
 changelog/_unreleased/2024-02-07-implemented-mesh-data-decompression-via-draco-loader.md
 changelog/_unreleased/2024-02-14-fix-sw-media-modal-v2-target-folder-property.md
@@ -1705,6 +1716,7 @@ changelog/_unreleased/2024-03-11-allow-vue-compat-mode-removal.md
 changelog/_unreleased/2024-03-25-handle-nullable-tax-status.md
 changelog/_unreleased/2024-02-26-change-path-column-in-app-definition.md
 changelog/_unreleased/2024-02-07-openapi-landing-page.md
+changelog/_unreleased/2024-04-03-add-ipv6-cidr-to-known-ip-address.md
 changelog/_unreleased/2024-02-06-added-correct-favicon-for-marketing-module.md
 changelog/release-6-5-3-1/2023-07-05-missing-product-cover-images-when-no-version-id-is-filled.md
 changelog/release-6-3-5-2/2021-02-23-fix-session-handling-on-logouts.md
@@ -6200,6 +6212,7 @@ tests/unit/Administration/Notification/Subscriber/UpdateSubscriberTest.php
 tests/unit/Administration/Snippet/AppAdministrationSnippetPersisterTest.php
 tests/unit/Administration/Snippet/SnippetFinderTest.php
 tests/unit/Administration/Snippet/SnippetExceptionTest.php
+tests/unit/Administration/Framework/Routing/KnownIps/KnownIpsCollectorTest.php
 tests/unit/Administration/Framework/Routing/NotFound/AdministrationNotFoundSubscriberTest.php
 tests/unit/Administration/AdministrationTest.php
 tests/unit/Administration/Command/DeleteExtensionLocalPublicFilesCommandTest.php
@@ -6281,7 +6294,6 @@ tests/unit/Storefront/Theme/Message/DeleteThemeFilesHandlerTest.php
 tests/unit/Storefront/Theme/Message/DeleteThemeFilesMessageTest.php
 tests/unit/Storefront/Theme/Message/CompileThemeHandlerTest.php
 tests/unit/Storefront/Theme/Message/CompileThemeMessageTest.php
-tests/unit/Storefront/Theme/DatabaseSalesChannelThemeLoaderInvalidatorTest.php
 tests/unit/Storefront/Theme/ThemeServiceTest.php
 tests/unit/Storefront/Theme/MD5ThemePathBuilderTest.php
 tests/unit/Storefront/Theme/ThemeCompilerTest.php
@@ -13732,6 +13744,11 @@ src/Administration/Resources/app/administration/eslint-rules/test-rules/await-as
 src/Administration/Resources/app/administration/eslint-rules/deprecation-rules/package.json
 src/Administration/Resources/app/administration/eslint-rules/deprecation-rules/index.js
 src/Administration/Resources/app/administration/eslint-rules/deprecation-rules/private-feature-declarations.js
+src/Administration/Resources/app/administration/eslint-rules/deprecation-rules/no-deprecated-components.js
+src/Administration/Resources/app/administration/eslint-rules/deprecation-rules/no-deprecated-component-usage.spec.js
+src/Administration/Resources/app/administration/eslint-rules/deprecation-rules/no-deprecated-components.spec.js
+src/Administration/Resources/app/administration/eslint-rules/deprecation-rules/no-deprecated-component-usage-checks/mt-button.check.js
+src/Administration/Resources/app/administration/eslint-rules/deprecation-rules/no-deprecated-component-usage.js
 src/Administration/Resources/app/administration/eslint-rules/deprecation-rules/no-twigjs-blocks.js
 src/Administration/Resources/app/administration/jsdoc.config.js
 src/Administration/Resources/app/administration/patches/inter-ui+3.19.3.patch
@@ -13838,6 +13855,7 @@ src/Administration/Resources/app/administration/src/core/service/utils/dom.utils
 src/Administration/Resources/app/administration/src/core/service/utils/format.utils.spec.js
 src/Administration/Resources/app/administration/src/core/service/utils/types.utils.spec.js
 src/Administration/Resources/app/administration/src/core/service/utils/object.utils.ts
+src/Administration/Resources/app/administration/src/core/service/utils/string.utils.spec.js
 src/Administration/Resources/app/administration/src/core/service/utils/dom.utils.spec.js
 src/Administration/Resources/app/administration/src/core/service/utils/format.utils.ts
 src/Administration/Resources/app/administration/src/core/service/utils/file-reader.utils.ts
@@ -14536,6 +14554,9 @@ src/Administration/Resources/app/administration/src/module/sw-settings-usage-dat
 src/Administration/Resources/app/administration/src/module/sw-settings-usage-data/component/sw-usage-data-consent-banner/index.ts
 src/Administration/Resources/app/administration/src/module/sw-settings-usage-data/component/sw-usage-data-consent-banner/sw-usage-data-consent-banner.spec.js
 src/Administration/Resources/app/administration/src/module/sw-settings-usage-data/component/sw-usage-data-consent-banner/sw-usage-data-consent-banner.html.twig
+src/Administration/Resources/app/administration/src/module/sw-settings-usage-data/component/sw-settings-usage-data-general/index.ts
+src/Administration/Resources/app/administration/src/module/sw-settings-usage-data/component/sw-settings-usage-data-general/sw-settings-usage-data-general.spec.js
+src/Administration/Resources/app/administration/src/module/sw-settings-usage-data/component/sw-settings-usage-data-general/sw-settings-usage-data-general.html.twig
 src/Administration/Resources/app/administration/src/module/sw-settings-usage-data/page/sw-settings-usage-data/sw-settings-usage-data.html.twig
 src/Administration/Resources/app/administration/src/module/sw-settings-usage-data/page/sw-settings-usage-data/index.ts
 src/Administration/Resources/app/administration/src/module/sw-settings-usage-data/page/sw-settings-usage-data/sw-settings-usage-data.spec.js
@@ -17370,12 +17391,15 @@ src/Administration/Resources/app/administration/src/app/component/base/sw-card-s
 src/Administration/Resources/app/administration/src/app/component/base/sw-card-section/sw-card-section.scss
 src/Administration/Resources/app/administration/src/app/component/base/sw-price-preview/index.js
 src/Administration/Resources/app/administration/src/app/component/base/sw-price-preview/sw-price-preview.html.twig
+src/Administration/Resources/app/administration/src/app/component/base/sw-button-deprecated/index.js
+src/Administration/Resources/app/administration/src/app/component/base/sw-button-deprecated/sw-button.scss
+src/Administration/Resources/app/administration/src/app/component/base/sw-button-deprecated/sw-button-deprecated.spec.js
+src/Administration/Resources/app/administration/src/app/component/base/sw-button-deprecated/sw-button.html.twig
 src/Administration/Resources/app/administration/src/app/component/base/sw-address/index.ts
 src/Administration/Resources/app/administration/src/app/component/base/sw-address/sw-address.scss
 src/Administration/Resources/app/administration/src/app/component/base/sw-address/sw-address.html.twig
 src/Administration/Resources/app/administration/src/app/component/base/sw-address/sw-address.spec.js
 src/Administration/Resources/app/administration/src/app/component/base/sw-button/index.js
-src/Administration/Resources/app/administration/src/app/component/base/sw-button/sw-button.scss
 src/Administration/Resources/app/administration/src/app/component/base/sw-button/sw-button.html.twig
 src/Administration/Resources/app/administration/src/app/component/base/sw-button/sw-button.spec.js
 src/Administration/Resources/app/administration/src/app/component/base/sw-circle-icon/index.js
@@ -17895,7 +17919,6 @@ src/Storefront/Theme/Extension/LanguageExtension.php
 src/Storefront/Theme/Extension/SalesChannelExtension.php
 src/Storefront/Theme/MD5ThemePathBuilder.php
 src/Storefront/Theme/ThemeCompiler.php
-src/Storefront/Theme/DatabaseSalesChannelThemeLoaderInvalidator.php
 src/Storefront/Theme/Event/ThemeCompilerEnrichScssVariablesEvent.php
 src/Storefront/Theme/Event/ThemeConfigResetEvent.php
 src/Storefront/Theme/Event/ThemeIndexerEvent.php
